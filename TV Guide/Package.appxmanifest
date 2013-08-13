@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="16853SenDunne.TVNow" Publisher="CN=9A2189F4-F87F-44C0-850D-8F1E6F86E12A" Version="1.0.0.2" />
+  <Properties>
+    <DisplayName>TV Now</DisplayName>
+    <PublisherDisplayName>Seán Dunne</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="TV_Guide.App">
+      <VisualElements DisplayName="TV Now" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="TV Guide" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" ShortName="TV Guide" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
